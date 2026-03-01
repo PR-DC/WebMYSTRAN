@@ -1,7 +1,12 @@
 {
   "name": "webmystran-wasm",
-  "version": "0.1.0",
-  "description": "WebMYSTRAN WebAssembly build, smoke validation, and Node.js wrapper API.",
+  "version": "0.1.1",
+  "description": "MYSTRAN WebAssembly build and wrapper.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PR-DC/WebXFOIL"
+  },
+  "homepage": "https://pr-dc.com",
   "author": "Milos Petrasinovic <mpetrasinovic@pr-dc.com>",
   "keywords": [
     "mystran",
