@@ -1,0 +1,17 @@
+# Keep only final wasm artifacts in dist
+dist/*
+!dist/mystran.js
+!dist/mystran.wasm
+
+# Docker/host build working directory
+build/
+
+# Native reference used by smoke script
+sources/MYSTRAN_native_ref/
+
+# Fetched third-party sources (recreated by scripts/fetch_deps.ps1)
+sources/MYSTRAN/
+sources/MYSTRAN_Benchmark/
+
+# Generated from embedded assets in tools/build.js
+tools/build_assets/

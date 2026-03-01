@@ -1,0 +1,49 @@
+{
+  "name": "webmystran-wasm",
+  "version": "0.1.0",
+  "description": "WebMYSTRAN WebAssembly build, smoke validation, and Node.js wrapper API.",
+  "author": "Milos Petrasinovic <mpetrasinovic@pr-dc.com>",
+  "keywords": [
+    "mystran",
+    "fea",
+    "fem",
+    "fortran",
+    "wasm",
+    "webassembly"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./mystran": "./src/web_mystran.js",
+    "./web_mystran": "./src/web_mystran.js",
+    "./mystran_input": "./src/mystran_input.js",
+    "./output_parser": "./src/output_parser.js",
+    "./wasm_runner": "./tools/wasm_runner.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist/",
+    "src/",
+    "tools/build.js",
+    "tools/smoke_test.js",
+    "tools/wasm_runner.js",
+    "scripts/",
+    "index.js",
+    "README.md",
+    "SOURCES.md",
+    "THIRD_PARTY_NOTICES.md",
+    "PATCHING.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "fetch-deps": "powershell -ExecutionPolicy Bypass -NoProfile -File scripts/fetch_deps.ps1",
+    "build": "node tools/build.js",
+    "smoke": "node tools/smoke_test.js",
+    "smoke-full": "node tools/smoke_test.js full"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
